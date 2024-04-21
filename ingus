@@ -257,7 +257,7 @@ if game.Players.LocalPlayer:IsInGroup(13786156) then
         Library:ToggleUI()
     end)
 
-MainSection:NewTextBox("IllegalCash Amount", "Allows you to change your IllegalCash amount." , function(valuee)
+MainSection:NewTextBox("IllegalCash Mod", "Allows you to change your IllegalCash amount." , function(valuee)
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -395,7 +395,7 @@ TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(0, 0, 0.345679015, 0)
 TextLabel_2.Size = UDim2.new(0, 344, 0, 50)
 TextLabel_2.Font = Enum.Font.Gotham
-TextLabel_2.Text = "Take out the SkittlesPack in your safe. Then click ' Yes '. And then put the SkittlesPack back in your safe. Take it out and then you should have infinite SkittlesPack uses."
+TextLabel_2.Text = "Take out SkittlesPack from your safe. Then click ' Yes '. And then put the SkittlesPack back in your safe. Then, take it out again and then you should have infinite uses for the SkittlesPack."
 TextLabel_2.TextColor3 = Color3.fromRGB(200, 200, 200)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 20.000
