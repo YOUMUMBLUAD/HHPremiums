@@ -292,7 +292,7 @@ TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(0, 0, 0.345679015, 0)
 TextLabel_2.Size = UDim2.new(0, 344, 0, 50)
 TextLabel_2.Font = Enum.Font.Gotham
-TextLabel_2.Text = "Take out all the IllegalCash in your safe. Then click ' Yes ' to change the amount that you put it to. And then put the IllegalCash back in your safe. Split it and then take it out and then go to the Laundromat to wash it or you can spend it at the BlackMarket Dealer."
+TextLabel_2.Text = "Take out all the IllegalCash in your safe. Then click ' Yes ' to change the amount of it that you put it to. And then put the IllegalCash back in your safe. Then split it, take it out and then you can go to the Laundromat to wash it or you can spend it at the BlackMarket Dealer."
 TextLabel_2.TextColor3 = Color3.fromRGB(200, 200, 200)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 20.000
@@ -308,18 +308,18 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 24.000
 TextButton.MouseButton1Down:connect(function()
 if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("IllegalCash") then
+game:GetService("Players").LocalPlayer.Backpack.IllegalCash.val.Value = valuee
+game:GetService("Players").LocalPlayer.Backpack.IllegalCash.ToolTip = "".. valuee .." £"
         game.StarterGui:SetCore("SendNotification", {
                         Title = "IllegalCash Mod Module";
                         Text = "Success.";
                         Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
                         Duration = "4";
                     })
-game:GetService("Players").LocalPlayer.Backpack.IllegalCash.val.Value = valuee
-game:GetService("Players").LocalPlayer.Backpack.IllegalCash.ToolTip = "".. valuee .." £"
 else
         game.StarterGui:SetCore("SendNotification", {
                         Title = "IllegalCash Mod Module";
-                        Text = "No IllegalCash found in inventory.";
+                        Text = "No IllegalCash found in your inventory.";
                         Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
                         Duration = "4";
                     })
@@ -404,7 +404,7 @@ TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.Position = UDim2.new(0, 0, 0.345679015, 0)
 TextLabel_2.Size = UDim2.new(0, 344, 0, 50)
 TextLabel_2.Font = Enum.Font.Gotham
-TextLabel_2.Text = "Take out SkittlesPack from your safe. Then click ' Yes '. And then put the SkittlesPack back in your safe. Then, take it out again and then you should have infinite uses for the SkittlesPack."
+TextLabel_2.Text = "Have a SkittlesPack tool in your inventory but don't equip it. Then click ' Yes '. And then put the SkittlesPack in your safe. And then take it out and then you should have infinite uses for the SkittlesPack."
 TextLabel_2.TextColor3 = Color3.fromRGB(200, 200, 200)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 20.000
@@ -420,20 +420,20 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 24.000
 TextButton.MouseButton1Down:connect(function()
 if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("SkittlesPack") then
+local valueee = "99999999"
+
+game:GetService("Players").LocalPlayer.Backpack.SkittlesPack.USES.Value = valueee
+game:GetService("Players").LocalPlayer.Backpack.SkittlesPack.ToolTip = "".. valueee .." Uses"
         game.StarterGui:SetCore("SendNotification", {
                         Title = "Inf SkitsPack Uses Module";
                         Text = "Success.";
                         Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
                         Duration = "4";
                     })
-local valueee = "99999999"
-
-game:GetService("Players").LocalPlayer.Backpack.SkittlesPack.USES.Value = valueee
-game:GetService("Players").LocalPlayer.Backpack.SkittlesPack.ToolTip = "".. valueee .." Uses"
 else
         game.StarterGui:SetCore("SendNotification", {
                         Title = "Inf SkitsPack Uses Module";
-                        Text = "No SkittlesPack found in inventory.";
+                        Text = "No SkittlesPack found in your inventory.";
                         Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
                         Duration = "4";
                     })
