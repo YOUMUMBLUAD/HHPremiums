@@ -308,21 +308,8 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 24.000
 TextButton.MouseButton1Down:connect(function()
 if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("IllegalCash") then
-local args = {
-            [1] = "Successfully modded the IllegalCash!",
-            [2] = "All"
-        }
-
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 game:GetService("Players").LocalPlayer.Backpack.IllegalCash.val.Value = valuee
 game:GetService("Players").LocalPlayer.Backpack.IllegalCash.ToolTip = "".. valuee .." £"
-else
-local args = {
-            [1] = "No IllegalCash found in your inventory!",
-            [2] = "All"
-        }
-
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 end
 wait(1)
 Frame.Visible = false
@@ -420,23 +407,10 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 24.000
 TextButton.MouseButton1Down:connect(function()
 if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("SkittlesPack") then
-local args = {
-            [1] = "Successfully modded the SkittlesPack!",
-            [2] = "All"
-        }
-
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 local valueee = "99999999"
 
 game:GetService("Players").LocalPlayer.Backpack.SkittlesPack.USES.Value = valueee
 game:GetService("Players").LocalPlayer.Backpack.SkittlesPack.ToolTip = "".. valueee .." Uses"
-else
-local args = {
-            [1] = "No SkittlesPack found in your inventory.",
-            [2] = "All"
-        }
-
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 end
 wait(1)
 Frame.Visible = false
