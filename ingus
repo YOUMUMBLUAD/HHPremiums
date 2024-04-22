@@ -308,8 +308,21 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 24.000
 TextButton.MouseButton1Down:connect(function()
 if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("IllegalCash") then
+        game.StarterGui:SetCore("SendNotification", {
+                        Title = "IllegalCash Mod Module";
+                        Text = "Success.";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
 game:GetService("Players").LocalPlayer.Backpack.IllegalCash.val.Value = valuee
 game:GetService("Players").LocalPlayer.Backpack.IllegalCash.ToolTip = "".. valuee .." £"
+else
+        game.StarterGui:SetCore("SendNotification", {
+                        Title = "IllegalCash Mod Module";
+                        Text = "No IllegalCash found in inventory.";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
 end
 wait(1)
 Frame.Visible = false
@@ -380,7 +393,7 @@ TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(38, 45, 71)
 TextLabel.Size = UDim2.new(0, 344, 0, 50)
 TextLabel.Font = Enum.Font.Gotham
-TextLabel.Text = "Harlem Hub - Inf SkitsPack"
+TextLabel.Text = "Harlem Hub - Inf SkitsPack Uses"
 TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 TextLabel.TextSize = 23.000
 TextLabel.TextStrokeColor3 = Color3.fromRGB(200, 200, 200)
@@ -407,10 +420,23 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 24.000
 TextButton.MouseButton1Down:connect(function()
 if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("SkittlesPack") then
+        game.StarterGui:SetCore("SendNotification", {
+                        Title = "Inf SkitsPack Uses Module";
+                        Text = "Success.";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
 local valueee = "99999999"
 
 game:GetService("Players").LocalPlayer.Backpack.SkittlesPack.USES.Value = valueee
 game:GetService("Players").LocalPlayer.Backpack.SkittlesPack.ToolTip = "".. valueee .." Uses"
+else
+        game.StarterGui:SetCore("SendNotification", {
+                        Title = "Inf SkitsPack Uses Module";
+                        Text = "No SkittlesPack found in inventory.";
+                        Icon = "https://www.roblox.com/library/3971489730/Money-icon?Category=Decals&SortType=Relevance&SortAggregation=AllTime&SearchKeyword=money+icon&CreatorId=0&Page=1&Position=6&SearchId=312fffd7-bfc2-4f93-90d3-9c87a6154f2d";
+                        Duration = "4";
+                    })
 end
 wait(1)
 Frame.Visible = false
