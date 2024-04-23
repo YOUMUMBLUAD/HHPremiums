@@ -251,7 +251,7 @@ if game.Players.LocalPlayer:IsInGroup(13786156) then
     local Window = Library.CreateLib("Harlem Hub Premium Panel - South London 2", "Ocean")
 
     local Main = Window:NewTab("Main")
-    local MainSection = Main:NewSection("Main")
+    local MainSection = Main:NewSection("Hello, ".. game.Players.LocalPlayer.Name ..". ")
 
     MainSection:NewKeybind("Toggle UI", "Allows you to toggle open and close the hub.", Enum.KeyCode.RightControl, function()
         Library:ToggleUI()
@@ -420,7 +420,7 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 24.000
 TextButton.MouseButton1Down:connect(function()
 if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("SkittlesPack") then
-local valueee = "99999999"
+local valueee = "999999999"
 
 game:GetService("Players").LocalPlayer.Backpack.SkittlesPack.USES.Value = valueee
 game:GetService("Players").LocalPlayer.Backpack.SkittlesPack.ToolTip = "".. valueee .." Uses"
