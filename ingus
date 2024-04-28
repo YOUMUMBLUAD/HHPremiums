@@ -251,7 +251,7 @@ if game.Players.LocalPlayer:IsInGroup(13786156) then
     local Window = Library.CreateLib("Harlem Hub Premium Panel - South London 2", "Ocean")
 
     local Main = Window:NewTab("Main")
-    local MainSection = Main:NewSection("Hello, ".. game.Players.LocalPlayer.Name ..". ")
+    local MainSection = Main:NewSection("Max IllegalCash You Can Have In Safe = 500k")
 
     MainSection:NewKeybind("Toggle UI", "Allows you to toggle open and close the hub.", Enum.KeyCode.RightControl, function()
         Library:ToggleUI()
